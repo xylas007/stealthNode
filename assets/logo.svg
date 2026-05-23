@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C6EFF"/>
+      <stop offset="50%" stop-color="#9B8AFF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B4FCC"/>
+      <stop offset="100%" stop-color="#7C6EFF"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle glow -->
+  <circle cx="256" cy="256" r="200" fill="#7C6EFF" opacity="0.05"/>
+  <!-- Shield body -->
+  <path d="M256 48L96 128v96c0 106.7 73.6 206.4 160 230.4C342.4 430.4 416 330.7 416 224v-96L256 48z"
+    fill="url(#shieldGrad)" filter="url(#outerGlow)" stroke="#9B8AFF" stroke-width="2" stroke-opacity="0.3"/>
+  <!-- Inner shield detail -->
+  <path d="M256 88L128 152v80c0 88 60.8 170.4 128 190.4C323.2 402.4 384 320 384 232v-80L256 88z"
+    fill="url(#innerGrad)" opacity="0.4"/>
+  <!-- Keyhole circle -->
+  <circle cx="256" cy="220" r="40" fill="#0D0D12" filter="url(#glow)"/>
+  <!-- Keyhole body -->
+  <rect x="240" y="256" width="32" height="56" rx="16" fill="#0D0D12"/>
+  <!-- Node dots - circuit pattern -->
+  <circle cx="152" cy="180" r="6" fill="#A78BFA" opacity="0.6"/>
+  <circle cx="360" cy="180" r="6" fill="#A78BFA" opacity="0.6"/>
+  <circle cx="136" cy="280" r="5" fill="#A78BFA" opacity="0.4"/>
+  <circle cx="376" cy="280" r="5" fill="#A78BFA" opacity="0.4"/>
+  <circle cx="200" cy="120" r="4" fill="#A78BFA" opacity="0.3"/>
+  <circle cx="312" cy="120" r="4" fill="#A78BFA" opacity="0.3"/>
+  <!-- Node connection lines -->
+  <line x1="152" y1="180" x2="216" y2="220" stroke="#A78BFA" stroke-width="1.5" opacity="0.2"/>
+  <line x1="360" y1="180" x2="296" y2="220" stroke="#A78BFA" stroke-width="1.5" opacity="0.2"/>
+  <line x1="200" y1="120" x2="232" y2="188" stroke="#A78BFA" stroke-width="1" opacity="0.15"/>
+  <line x1="312" y1="120" x2="280" y2="188" stroke="#A78BFA" stroke-width="1" opacity="0.15"/>
+  <!-- Highlight accent -->
+  <ellipse cx="220" cy="140" rx="60" ry="20" fill="white" opacity="0.06" transform="rotate(-20 220 140)"/>
+</svg>
