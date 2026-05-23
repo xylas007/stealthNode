@@ -7,6 +7,7 @@
   [![Pricing: FREE](https://img.shields.io/badge/Pricing-100%25_FREE-00BFFF.svg?style=for-the-badge)](#)
   [![Local First](https://img.shields.io/badge/Architecture-100%25_OFFLINE-00C853.svg?style=for-the-badge)](#)
   [![Platform](https://img.shields.io/badge/Platform-Windows-0078D7.svg?style=for-the-badge&logo=windows&logoColor=white)](#)
+  [![VirusTotal](https://img.shields.io/badge/VirusTotal-Clean-brightgreen.svg?style=for-the-badge&logo=virustotal)](https://www.virustotal.com/gui/file/d94e1f7210b5cde6838dea887037cfcb3d1a4b03cc9b8a59a55920877a64d57b/detection)
 
 </div>
 
@@ -23,6 +24,7 @@ In a world of cloud data breaches and subscription models, StealthNode takes a d
 ### 🛡️ Why StealthNode?
 - **100% LOCAL & OFFLINE**: The application has **absolutely zero access to the internet**. Your data never leaves your hard drive. There is no cloud, no telemetry, and no remote servers to be hacked.
 - **MILITARY-GRADE ENCRYPTION**: All your passwords, notes, documents, and images are encrypted locally using industrial-grade authenticated encryption.
+- **VERIFIED CLEAN**: StealthNode has been strictly analyzed and scanned. Check out the [100% Clean VirusTotal Report](https://www.virustotal.com/gui/file/d94e1f7210b5cde6838dea887037cfcb3d1a4b03cc9b8a59a55920877a64d57b/detection).
 
 ---
 
